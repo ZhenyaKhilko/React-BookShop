@@ -9,7 +9,7 @@ const Header = ({ onClickCart }) => {
 
     return (
         <header>
-            <Link to="/">
+            <Link to="/React-BookShop/">
                 <div className="headerLeft">
                     <img width={40} height={40} src="img/logo.png" alt="Logo" />
                     <div className="headerInfo">
@@ -24,12 +24,12 @@ const Header = ({ onClickCart }) => {
                     <span>{totalPrice} $</span>
                 </li>
                 <li>
-                    <Link to="/favorites">
+                    <Link to="/React-BookShop/favorites">
                         <img className="favoriteButton" width={18} height={18} src="img/favorite.svg" alt="Favorite" />
                     </Link>
                 </li>
                 <li>
-                    <Link to="/orders">
+                    <Link to="/React-BookShop/orders">
                         <img width={18} height={18} src="img/user.svg" alt="User" />
                     </Link>
                 </li>

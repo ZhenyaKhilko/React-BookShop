@@ -8,7 +8,7 @@ function Emptiness ({image, title}) {
                 <img src={image} alt=":(" />
             </p>
             <p className={styles.text}>{title}</p>
-            <Link to="/">
+            <Link to="/React-BookShop/">
                 <button className={styles.button}>
                     <img className={styles.buttonImage} width={18} height={18} src="img/arrow1.svg" alt="Arrow" />Back
                 </button>
