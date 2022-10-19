@@ -32,7 +32,7 @@ const Card = ({id, img, description, price, onFavorite, onPlus, isFromFavorites=
             <rect x="205" y="353" rx="5" ry="5" width="33" height="32" />
           </ContentLoader> : <>
             <div className={styles.favorite}>
-              {onFavorite && <img  onClick={onClickLike} src={isBookLiked(id, isFromFavorites) ? "/img/liked.png" : "/img/unliked.png"} width={25} height={23} alt="Unliked" />}
+              {onFavorite && <img  onClick={onClickLike} src={isBookLiked(id, isFromFavorites) ? "img/liked.png" : "img/unliked.png"} width={25} height={23} alt="Unliked" />}
             </div>
             <img width={180} height={250} className={styles.book} src={img} alt="" />
             <h5>{description}</h5>
@@ -41,7 +41,7 @@ const Card = ({id, img, description, price, onFavorite, onPlus, isFromFavorites=
               <span>Price:</span>
               <b>{price} $</b>
               </div>
-              {onPlus && <img className={styles.plus} onClick={onCLickPlus} src={isBookAdded(id) ? "/img/btn-checked.svg" : "/img/plus.svg"} alt="Plus" />}
+              {onPlus && <img className={styles.plus} onClick={onCLickPlus} src={isBookAdded(id) ? "img/btn-checked.svg" : "img/plus.svg"} alt="Plus" />}
             </div>
           </>}
         </div>)

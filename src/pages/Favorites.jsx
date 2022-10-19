@@ -13,7 +13,7 @@ const Favorites = () => {
             </div>
             <div className="cards">
                 {favBooks.map((book) => <Card {...book} onFavorite={onRemoveFromFavorites} key={book.description} isFromFavorites={true} loading={false}/>)}
-                {!favBooks.length && <Emptiness title={"You didn't add anything to favorites yet!"} image={"/img/sad-emotion1.svg"}/>}
+                {!favBooks.length && <Emptiness title={"You didn't add anything to favorites yet!"} image={"img/sad-emotion1.svg"}/>}
             </div>
         </div>
     )

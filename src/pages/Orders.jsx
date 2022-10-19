@@ -36,7 +36,7 @@ const Orders = () => {
                   {...book} 
                   loading={isLoading}
                 />)}
-              {!orders.length && <Emptiness title={"You didn't add anything to orders yet!"} image={"/img/sad-emotion1.svg"}/>}
+              {!orders.length && <Emptiness title={"You didn't add anything to orders yet!"} image={"img/sad-emotion1.svg"}/>}
           </div>
       </div>
   )

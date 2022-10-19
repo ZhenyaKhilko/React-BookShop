@@ -134,14 +134,14 @@ function App() {
                 onClickRemove={onRemoveFromCart} opened={openedCart}/>
           <Header onClickCart={() => setOpenedCart(true)}/>
           <Routes>
-            <Route path="/" exact
+            <Route path="" exact
               element={<Home
                 books={books} cartBooks={cartBooks} searchValue={searchValue}
                 setSearchValue={setSearchValue} onChangeSearchInput={onChangeSearchInput} 
                 onAddToCart={onAddToCart} onAddToFavorites={onAddToFavorites} isLoading={isLoading}/>}
               />
-            <Route path="/favorites" exact element={<Favorites />} />
-            <Route path="/orders" exact element={<Orders />} />
+            <Route path="favorites" exact element={<Favorites />} />
+            <Route path="orders" exact element={<Orders />} />
           </Routes>
         </div>
     </AppContext.Provider>

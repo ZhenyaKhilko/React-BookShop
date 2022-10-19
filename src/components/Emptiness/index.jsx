@@ -10,7 +10,7 @@ function Emptiness ({image, title}) {
             <p className={styles.text}>{title}</p>
             <Link to="/">
                 <button className={styles.button}>
-                    <img className={styles.buttonImage} width={18} height={18} src="/img/arrow1.svg" alt="Arrow" />Back
+                    <img className={styles.buttonImage} width={18} height={18} src="img/arrow1.svg" alt="Arrow" />Back
                 </button>
             </Link>
         </div>

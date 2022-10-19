@@ -37,7 +37,7 @@ const Cart = ({ books = [], onClickClose, onClickRemove, opened }) => {
     return (
         <div className={`${styles.overlay} ${opened ? styles.overlayVisible : ''}`}>
             <div className={styles.drawer}>
-                <h2>Cart <img className="classItem-remove" onClick={onClickClose}  src="/img/remove-btn.svg" alt="Remove" /></h2>
+                <h2>Cart <img className="classItem-remove" onClick={onClickClose}  src="img/remove-btn.svg" alt="Remove" /></h2>
                 
                 {books.length > 0 ? (
                     <>
@@ -49,7 +49,7 @@ const Cart = ({ books = [], onClickClose, onClickRemove, opened }) => {
                                         <p>{book.description}</p>
                                         <b>{book.price}$</b>
                                     </div>
-                                    <img className="classItem-remove" onClick={() => onClickRemove(book.id)} src="/img/remove-btn.svg" alt="Remove" />
+                                    <img className="classItem-remove" onClick={() => onClickRemove(book.id)} src="img/remove-btn.svg" alt="Remove" />
                                 </div>
                             ))}
                         </div>
@@ -67,12 +67,12 @@ const Cart = ({ books = [], onClickClose, onClickRemove, opened }) => {
                                     <b>{totalPrice/10}$</b>
                                 </li>
                             </ul>
-                            <button disabled={isLoading} onClick={onClickOrder} className="greenButton">Make order <img src="/img/arrow.svg" alt="Arrow" /></button>
+                            <button disabled={isLoading} onClick={onClickOrder} className="greenButton">Make order <img src="img/arrow.svg" alt="Arrow" /></button>
                         </div>
                     </>
                     ) : (
                       <Info title={isOrdered ? "Order completed" : "Cart is empty"}
-                            image={isOrdered ? "/img/ordered.svg" : "/img/emptyCart.svg"}
+                            image={isOrdered ? "img/ordered.svg" : "img/emptyCart.svg"}
                             description={isOrdered ? `Your order ${orderId} soon will be handled to courier` : "Add at least 1 book to make an order"} />
                     )}
             </div>
